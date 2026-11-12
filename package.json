@@ -1,0 +1,17 @@
+{
+  "name": "zhu-sieve",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "按动态类型筛选知乎关注页的 Chrome 插件。",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "test:all": "npm run check && npm test && npm run test:browser",
+    "icons": "node scripts/icons.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}

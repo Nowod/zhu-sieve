@@ -1,0 +1,3 @@
+html[data-zhu-sieve-active] [data-zhu-sieve-hidden] {
+  display: none !important;
+}

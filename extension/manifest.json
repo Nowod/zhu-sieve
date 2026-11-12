@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "知筛 · zhu-sieve",
+  "version": "1.0.0",
+  "description": "按动态类型筛选知乎关注页，默认只显示回答和发布。",
+  "minimum_chrome_version": "120",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "知筛 · 动态筛选",
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png" }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.zhihu.com/*"],
+    "js": ["rules.js", "content.js"],
+    "css": ["content.css"],
+    "run_at": "document_start"
+  }]
+}

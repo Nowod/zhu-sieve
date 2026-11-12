@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="UTF-8">
+<title>知乎关注页测试</title>
+<style>body{font:14px/1.5 sans-serif;margin:24px}.TopstoryItem,.Topstory-follow>.List-item{padding:12px;margin:8px 0;border:1px solid #ddd}.FeedSource{color:#888}</style>
+<body>
+  <nav><a href="/follow">关注</a><a href="/">推荐</a></nav>
+  <main class="Topstory-follow">
+    <article class="TopstoryItem" id="answer"><div class="FeedSource"><div class="FeedSource-firstline"><a class="UserLink" href="/people/a">小明</a> 回答了问题</div><div class="FeedSource-secondline">昨天发布</div></div><h2>一个普通问题</h2><p>内容中提到赞同了回答，仍应属于回答。</p><button>关注</button></article>
+    <article class="TopstoryItem" id="publish"><div class="FeedSource"><div class="FeedSource-firstline"><a class="UserLink" href="/people/b">小红</a> 发布了文章</div></div><h2>文章标题</h2><p>文章内容</p></article>
+    <article class="TopstoryItem" id="pin"><div class="FeedSource"><div class="FeedSource-firstline">小红 发布了想法</div></div><p>想法</p></article>
+    <article class="TopstoryItem" id="vote"><div class="FeedSource"><div class="FeedSource-firstline"><span class="UserLink"><a href="/people/c">小白</a></span> 赞同了回答</div></div><h2>回答的标题</h2><p>发布了文章和回答了问题都在正文里。</p></article>
+    <article class="TopstoryItem" id="follow"><div class="FeedSource">小明 关注了问题</div><h2>问题标题</h2></article>
+    <article class="TopstoryItem" id="ask"><div class="FeedSource">小明 提出了问题</div><h2>提问标题</h2></article>
+    <article class="TopstoryItem" id="favorite"><div class="FeedSource">小明 收藏了文章</div><h2>文章</h2></article>
+    <article class="TopstoryItem" id="comment"><div class="FeedSource">小明 评论了回答</div><h2>回答</h2></article>
+    <article class="TopstoryItem" id="share"><div class="FeedSource">小明 分享了文章</div><h2>文章</h2></article>
+    <article class="TopstoryItem" id="other"><div class="FeedSource">推荐给你</div><h2>回答了问题不是这里的动态类型</h2></article>
+    <article class="TopstoryItem" id="unknown"><h2>暂无来源信息</h2></article>
+    <div class="TopstoryItem" id="skeleton"><div class="PlaceHolder">加载中</div></div>
+  </main>
+  <aside class="Card"><div class="FeedSource">侧栏 赞同了回答</div>侧栏保持可见</aside>
+  <div id="sentinel">加载更多</div>
+</body>
+</html>
